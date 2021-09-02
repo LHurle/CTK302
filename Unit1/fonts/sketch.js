@@ -3,7 +3,7 @@ let f1, f2;
 function setup() {
   createCanvas(500, 500);
   f1 = loadFont("assets/BetterGrade.ttf");
-  f2 - loadFont("assets/Hidetoshy.ttf");
+  f2 - loadFont("assets/IntenseEmotion.ttf");
   textAlign(CENTER);
 }
 
