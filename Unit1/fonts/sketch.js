@@ -3,7 +3,7 @@ let f1, f2;
 function setup() {
   createCanvas(500, 500);
   f1 = loadFont("assets/BetterGrade.ttf");
-  f2 - loadFont("assets/IntenseEmotion.ttf");
+  f2 = loadFont("assets/IntenseEmotion.ttf");
   textAlign(CENTER);
 }
 
@@ -14,7 +14,7 @@ function draw() {
   text("hello world", 100, 100);
 
   textFont(f2);
-  textSize(160);
+  textSize(80);
   text("Goodbye World", 200, 200);
 
 }
