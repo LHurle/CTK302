@@ -25,10 +25,13 @@ function draw() {
 
   fill(0);
   text(mouseX + ", " + mouseY, 40, 40);
+  text("placeholder text; \nplaceholder text; placeholder text", 220, 50);
+  textSize(40);
 
 }
 
 // record the mouse location in console when clicked
 function mouseReleased() {
   print(mouseX + ", " + mouseY);
+
 }
