@@ -7,14 +7,14 @@ function setup() {
 
 function draw() {
 
-  background("red");
+  background("#FFFF20");
 
   ellipse(550, 550, 200, 200);
 
   if (mouseIsPressed) {
     // stuff that shows when the mouse is pressed
-    background("blue");
-    rect(100, 100, 100, 100);
+    background("pink");
+    rect(1000, 800, 2000, 400);
 
   } else {
     // when the mouse isn't pressed!
