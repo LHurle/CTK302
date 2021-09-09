@@ -44,7 +44,7 @@ function draw() {
     triangle(720, 0, 880, 600, 790, 600);
     triangle(720, 0, 970, 600, 950, 600);
 
-    //Lights
+    //Lights Left Side
     fill("red");
     ellipse(328, 105, 30, 30);
     ellipse(300, 125, 30, 30);
@@ -59,12 +59,57 @@ function draw() {
     ellipse(50, 50, 30, 30);
     ellipse(35, 15, 30, 30);
 
+    //Lights Right Side
+    ellipse(775, 105, 30, 30);
+    ellipse(800, 130, 30, 30);
+    ellipse(828, 155, 30, 30);
+    ellipse(861, 170, 30, 30);
+    ellipse(900, 170, 30, 30);
+    ellipse(935, 150, 30, 30);
+    ellipse(960, 125, 30, 30);
+    ellipse(980, 95, 30, 30);
+    ellipse(998, 60, 30, 30);
+
+    //Shoes
+    fill("red");
+    ellipse(270, 600, 90, 40);
+    rect(320, 600, 30, 40);
+    ellipse(420, 600, 90, 40);
+    rect(370, 600, 30, 40);
+    fill("white");
+    ellipse(250, 590, 30, 30);
+    ellipse(445, 590, 30, 30);
+
+    //Body
+    fill("#E55E0E");
+    ellipse(345, 370, 100, 200);
+    ellipse(320, 500, 100, 200);
+    ellipse(370, 500, 100, 200);
+
+    //Belt
+    fill("red");
+    rect(345, 405, 120, 30);
+    fill("white");
+    ellipse(348, 405, 30, 30);
+    fill("black");
+    ellipse(342, 400, 10, 10);
+    ellipse(355, 400, 10, 10);
+    fill("white");
+    rect(348, 420, 15, 10);
+
+    //Head
+    fill("white");
+    ellipse(345, 250, 100, 100);
+
     fill("red");
     text("If you stay at her circus after dark, \n you'll get quite the fang-tastic surprise!", 140,50);
     textSize(30);
 
   } else {
     // when the mouse isn't pressed!
+
+    fill("#5E3023");
+    rect(1000, 800, 2000, 400);
 
     fill("red");
     //Left side
@@ -80,7 +125,7 @@ function draw() {
     triangle(720, 0, 880, 600, 790, 600);
     triangle(720, 0, 970, 600, 950, 600);
 
-    //Lights
+    //Lights Left Side
     fill("white");
     ellipse(328, 105, 30, 30);
     ellipse(300, 125, 30, 30);
@@ -95,8 +140,42 @@ function draw() {
     ellipse(50, 50, 30, 30);
     ellipse(35, 15, 30, 30);
 
-    fill("#5E3023");
-    rect(1000, 800, 2000, 400);
+    //Lights Right Side
+    ellipse(775, 105, 30, 30);
+    ellipse(800, 130, 30, 30);
+    ellipse(828, 155, 30, 30);
+    ellipse(861, 170, 30, 30);
+    ellipse(900, 170, 30, 30);
+    ellipse(935, 150, 30, 30);
+    ellipse(960, 125, 30, 30);
+    ellipse(980, 95, 30, 30);
+    ellipse(998, 60, 30, 30);
+
+    //Shoes
+    fill("black");
+    ellipse(270, 600, 90, 40);
+    rect(320, 600, 30, 40);
+    ellipse(420, 600, 90, 40);
+    rect(370, 600, 30, 40);
+    fill("white");
+    ellipse(250, 590, 30, 30);
+    ellipse(445, 590, 30, 30);
+
+    //Body
+    fill("#E5625E");
+    ellipse(345, 370, 100, 200);
+    ellipse(320, 500, 100, 200);
+    ellipse(370, 500, 100, 200);
+
+    //Belt
+    fill("white");
+    rect(345, 405, 120, 30);
+    fill("black");
+    ellipse(348, 405, 30, 30);
+
+    //Head
+    fill("white");
+    ellipse(345, 250, 100, 100);
 
     fill("white");
     text("This is Bella the Clown. By day, she's a regular circus clown.\n But by night, she undergoes a transformation.", 140, 50);
@@ -124,3 +203,4 @@ function touchStarted() {
 }
 
 //Worked 2 hours on creating the background. 9/8/21
+//Worked for 45 minutes to add most of clown body. 9/9/21
