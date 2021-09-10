@@ -280,8 +280,6 @@ function draw() {
     textSize(30);
   }
 
-  text(mouseX + ", " + mouseY, 10, 40);
-
   text("Royalty Free Music from Bensound", 15, 790);
   fill("white");
 
