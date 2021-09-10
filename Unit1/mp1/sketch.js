@@ -9,6 +9,7 @@ function setup() {
   createCanvas(1000, 800);
   rectMode(CENTER);
   ellipseMode(CENTER);
+  angleMode(DEGREES);
 
 }
 
@@ -43,6 +44,12 @@ function draw() {
     triangle(720, 0, 610, 600, 705, 600);
     triangle(720, 0, 880, 600, 790, 600);
     triangle(720, 0, 970, 600, 950, 600);
+
+    //Moon
+    fill("white");
+    ellipse(865, 70, 80, 80);
+    fill("pink");
+    ellipse(880, 65, 60, 60);
 
     //Lights Left Side
     fill("red");
@@ -85,6 +92,30 @@ function draw() {
     ellipse(345, 370, 100, 200);
     ellipse(320, 500, 100, 200);
     ellipse(370, 500, 100, 200);
+    fill("white");
+    ellipse(345, 320, 20, 20);
+    ellipse(345, 360, 20, 20);
+
+    //Arms
+    fill("#E55E0E");
+    quad(312, 294, 315, 325, 245, 360, 250, 330);
+    ellipse(290, 345, 90, 30);
+    fill("white");
+    ellipse(248, 345, 40, 40);
+
+    fill("#E55E0E");
+    quad(377, 294, 370, 325, 450, 358, 450, 330);
+    ellipse(390, 345, 90, 30);
+    fill("white");
+    ellipse(440, 340, 40, 40);
+
+    //Knife
+    fill("#964B00");
+    rect(250, 345, 15, 70);
+    fill("white");
+    rect(240, 270, 40, 80);
+    fill("pink");
+    ellipse(230, 240, 10, 10);
 
     //Belt
     fill("red");
@@ -94,12 +125,38 @@ function draw() {
     fill("black");
     ellipse(342, 400, 10, 10);
     ellipse(355, 400, 10, 10);
+    triangle(349, 405, 345, 412, 353, 412);
     fill("white");
     rect(348, 420, 15, 10);
+
+    //Hair
+    fill("#041E42");
+    ellipse(345, 220, 150, 150);
 
     //Head
     fill("white");
     ellipse(345, 250, 100, 100);
+
+    //Face
+    fill("yellow");
+    ellipse(320, 240, 20, 30);
+    ellipse(370, 240, 20, 30);
+    fill("green");
+    ellipse(320, 240, 10, 10);
+    ellipse(370, 240, 10, 10);
+    fill("red");
+    ellipse(345, 257, 20, 20);
+    arc(340, 270, 70, 50, 0, 205);
+    fill("white");
+    arc(340, 275, 50, 30, 0, 205);
+
+    //Teeth
+    fill("black");
+    triangle(340, 275, 327, 288, 320, 265);
+    triangle(340, 275, 345, 290, 365, 275);
+    fill("white");
+    triangle(338, 273, 328, 285, 323, 266);
+    triangle(342, 275, 346, 287, 360, 275);
 
     fill("red");
     text("If you stay at her circus after dark, \n you'll get quite the fang-tastic surprise!", 140,50);
@@ -166,6 +223,33 @@ function draw() {
     ellipse(345, 370, 100, 200);
     ellipse(320, 500, 100, 200);
     ellipse(370, 500, 100, 200);
+    fill("white");
+    ellipse(345, 320, 20, 20);
+    ellipse(345, 360, 20, 20);
+
+    //Arms
+    fill("#E5625E");
+    quad(312, 294, 315, 325, 245, 360, 250, 330);
+    ellipse(290, 345, 90, 30);
+    fill("white");
+    ellipse(248, 345, 40, 40);
+
+    fill("#E5625E");
+    quad(377, 294, 370, 325, 450, 358, 450, 330);
+    ellipse(390, 345, 90, 30);
+    fill("white");
+    ellipse(440, 340, 40, 40);
+
+    //Flower
+    fill("green");
+    rect(248, 310, 5, 70);
+    fill("orange");
+    ellipse(233, 272, 30, 30);
+    ellipse(233, 250, 30, 30);
+    ellipse(253, 272, 30, 30);
+    ellipse(253, 250, 30, 30);
+    fill("yellow");
+    ellipse(243, 260, 20, 20);
 
     //Belt
     fill("white");
@@ -173,9 +257,23 @@ function draw() {
     fill("black");
     ellipse(348, 405, 30, 30);
 
+    //Hair
+    fill("#ADD8E6");
+    ellipse(345, 220, 150, 150);
+
     //Head
     fill("white");
     ellipse(345, 250, 100, 100);
+
+    //Face
+    fill("blue");
+    ellipse(320, 240, 20, 30);
+    ellipse(370, 240, 20, 30);
+    fill("red");
+    ellipse(345, 257, 20, 20);
+    arc(345, 280, 30, 30, 0, 205);
+    fill("white");
+    arc(345, 283, 20, 20, 0, 205);
 
     fill("white");
     text("This is Bella the Clown. By day, she's a regular circus clown.\n But by night, she undergoes a transformation.", 140, 50);
@@ -204,3 +302,4 @@ function touchStarted() {
 
 //Worked 2 hours on creating the background. 9/8/21
 //Worked for 45 minutes to add most of clown body. 9/9/21
+//Worked for 2 hours finishing MP1. 9/9/21
