@@ -15,7 +15,7 @@ function setup() {
 
 function draw() {
 
-  background("#FFFF20");
+  background("#FEDF00");
 
   noStroke();
   fill("white");
