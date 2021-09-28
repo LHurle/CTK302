@@ -1,10 +1,10 @@
 var mic;
 var vol;
-var c = 'green';
+var c = 'red';
 let x = 0 ;
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(900, 600);
 
   // code for initializing mic in.
   mic = new p5.AudioIn(); // what does "new" mean?
@@ -22,19 +22,22 @@ function draw() {
   if (vol > .20) { // if the volume is LOUD?
     // do something
 
-    c = color(random(255), random(255), random(255)); // here I'm setting the background to a random color
+    c = color(random(155), random(155), random(155)); // here I'm setting the background to a random color
   }
 
   // extra stuff for debugging
-  textSize(18);
+  fill("white");
+  textSize(50);
   text("Click the screen first to give\npermission for mic input.\nMy volume is " + vol, 10, 60);
+  fill("purple");
+  ellipse(100, vol * 100, 50, 50);
 
-  rect(vol * 100, 100, 50, 50);
+  fill("yellow");
+  rect(vol * 300, 250, 150, 150);
 
-//   rect(vol * 300, 150, 50, 50);
-
-//   x = map(vol, 0, .2, 0, width) ;
-//   rect(x, 200, 50, 50);
+   x = map(vol, 0, .2, 0, width) ;
+   fill("blue");
+   rect(x, 200, 50, 50);
 
 }
 
