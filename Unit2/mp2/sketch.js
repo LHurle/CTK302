@@ -17,7 +17,7 @@ function draw() {
 
   switch(numberOfTouches) {
     case 0:
-      text("No One is Here \nArt Credit: Laura Hurley", 50, 50);
+      text("No One is Here \nArt Credit: Laura Hurley \nOriginal Art by Melanie Adlich", 50, 50);
       image(img1, 0, 100, 850, 1000);
       fill("red");
       rect(250, 10, 80, 80);
@@ -42,7 +42,7 @@ function draw() {
 
     case 2:
       text("Two People are Here! \nArt Credit: Laura Hurley", 50, 50);
-      image(img3, 200, 200, 850, 1100);
+      image(img3, 0, 100, 850, 1100);
 
       fill("red");
       rect(250, 10, 80, 80);
@@ -53,6 +53,11 @@ function draw() {
       rect(350, 10, 80, 80);
       fill("white");
       text("Touch Me!", 363, 50);
+
+      fill("red");
+      rect(450, 10, 80, 80);
+      fill("white");
+      text("Touch Me!", 463, 50);
       break;
     }
   }
