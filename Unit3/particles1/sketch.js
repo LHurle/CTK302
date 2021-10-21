@@ -1,8 +1,9 @@
+let bg;
 let cars = [];
 
 function setup() {
   createCanvas(500, 500);
-
+  bg = loadImage("assets/coolbackground.png");
   noStroke();
 
   // for (let i = 0; i < 20; i++) {
@@ -11,7 +12,7 @@ function setup() {
 }
 
 function draw() {
-  background("assets/coolbackground.png");
+  image(bg, 0, 0);
 
   cars.push(new Car()); //spawn car
 
