@@ -35,7 +35,6 @@ function draw() {
   image(bg, 0, 0);
   textSize(10);
   fill("white");
-  text("Credits: \n Background - brgfx on freepik \n Bottles - Racool_studio on freepik", 10, 470);
 
   switch(state){
       case 0: //welcome
@@ -43,10 +42,15 @@ function draw() {
         textSize(25);
         fill("white");
         text("Welcome! Click the Mouse to Begin!", 100, 100);
+        textSize(10);
+        text("Credits: \n Background - brgfx on freepik \n Bottles - Racool_studio on freepik", 10, 470);
       break;
 
       case 1: //game state
         game() ;
+        fill("white");
+        textSize(10);
+        text("Credits: \n Background - brgfx on freepik \n Bottles - Racool_studio on freepik", 10, 470);
         timer++;
         if (timer > 10*60){
         timer = 0;
@@ -56,6 +60,9 @@ function draw() {
 
       case 2: //win state
         image(bg, 0, 0);
+        fill("white");
+        textSize(10);
+        text("Credits: \n Background - brgfx on freepik \n Bottles - Racool_studio on freepik", 10, 470);
         textSize(25);
         fill("white");
         text("You Won!!", 100, 100);
@@ -63,6 +70,9 @@ function draw() {
 
       case 3: //lose state
         image(bg, 0, 0);
+        fill("white");
+        textSize(10);
+        text("Credits: \n Background - brgfx on freepik \n Bottles - Racool_studio on freepik", 10, 470);
         textSize(25);
         fill("white");
         text("You Lost! :(", 100, 100);
