@@ -1,6 +1,6 @@
 let bg;
 let cars = [];
-let maxCars = 4;
+let maxCars = 10;
 let carsEaten = 0;
 let state = -1;
 let net;
@@ -43,7 +43,7 @@ function draw() {
       image(bg, 0, 0);
       textSize(25);
       fill("white");
-      text("Click to Begin!", 100, 100);
+      text("Click to Go to the Welcome Screen!", 100, 100);
 //      state = 0;
       break;
 
