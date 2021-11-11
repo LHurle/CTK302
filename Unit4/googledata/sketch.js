@@ -1,6 +1,7 @@
 var bubbles = [];
 let url = "";
 let song1;
+let f1;
 
 function preload() {
   song1 = loadSound("assets/classical.mp3");
@@ -18,6 +19,7 @@ function setup() {
 
   // Regular setup code we usually have
   createCanvas(600, 600);
+  f1 = loadFont("assets/Hidetoshy.ttf");
   textAlign(CENTER);
   ellipseMode(CENTER);
   rectMode(CENTER);
@@ -70,7 +72,8 @@ class Bubble {
       this.pos.x,
       this.pos.y
     );
-    textSize(16);
+    textSize(20);
+    textFont(f1);
 
     this.pos.add(this.vel);
     if (this.pos.x > width) this.pos.x = 0;
