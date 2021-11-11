@@ -63,7 +63,7 @@ function draw() {
       textSize(10);
       text("Credits: \n Background - brgfx on freepik \n Bottles - Racool_studio on freepik \n Background music is royalty free music from bensound.com", 10, 470);
       timer++;
-      if (timer > 10 * 60) {
+      if (timer > 10 * 200) {
         timer = 0;
         state = 3;
         song1.pause();
