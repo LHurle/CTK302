@@ -14,6 +14,9 @@ var frogPos;
 function setup() {
 
   createCanvas(windowWidth, windowHeight);
+  bg = loadImage("assets/29143.jpg");
+  bottle = loadImage("assets/bottle.png");
+  net = loadImage("assets/net.png");
 
   // initialize accelerometer variables
   alpha = 0;
@@ -53,7 +56,7 @@ function draw() {
   //  rotate(radians(alpha)); // using alpha in here so it doesn't feel bad
 
   // draw the FROG
-  // image(bunnyImage, 0, 0, 500, 500);
+  image(net 0, 0, 500, 500);
   fill('green');
   ellipse(0, 0, 80, 80);
   pop();
@@ -145,6 +148,7 @@ function Car() {
   this.display = function() {
 
     // maybe use an image here instead!
+    image(bottle, 0, 0, 50, 50);
     fill(this.r, this.g, this.b, this.a);
     ellipse(this.pos.x - 50, this.pos.y, 50, 50);
     ellipse(this.pos.x + 50, this.pos.y, 50, 50);
