@@ -5,6 +5,9 @@ var y = 0;
 var z = 0;
 var xPosition = 0;
 var yPosition = 0;
+let bg;
+let bottle;
+let net;
 
 // var bunnyImage;
 var cars = [];
@@ -42,6 +45,7 @@ function setup() {
 function draw() {
 
   background('#c6f5ff'); // light blue
+  image(bg, width/2, height/2, width, height);
 
   // the map command !!!!
   // takes your variable and maps it from range 1 to range 2
@@ -56,9 +60,7 @@ function draw() {
   //  rotate(radians(alpha)); // using alpha in here so it doesn't feel bad
 
   // draw the FROG
-  image(net 0, 0, 500, 500);
-  fill('green');
-  ellipse(0, 0, 80, 80);
+  image(net, 0, 0, 500, 500);
   pop();
 
 
@@ -149,10 +151,10 @@ function Car() {
 
     // maybe use an image here instead!
     image(bottle, 0, 0, 50, 50);
-    fill(this.r, this.g, this.b, this.a);
-    ellipse(this.pos.x - 50, this.pos.y, 50, 50);
-    ellipse(this.pos.x + 50, this.pos.y, 50, 50);
-    rect(this.pos.x + 17, this.pos.y - 30, 80, 60) ;
+    // fill(this.r, this.g, this.b, this.a);
+    // ellipse(this.pos.x - 50, this.pos.y, 50, 50);
+    // ellipse(this.pos.x + 50, this.pos.y, 50, 50);
+    // rect(this.pos.x + 17, this.pos.y - 30, 80, 60) ;
 
   }
 
