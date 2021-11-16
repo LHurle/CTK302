@@ -81,7 +81,7 @@ function draw() {
   fill('white');
   textSize(40);
   textAlign(CENTER);
-  text("Example Text!", width / 2, 600, windowWidth - 200, windowHeight - 200);
+  text("Collect Ocean Trash!", width / 2, 600, windowWidth - 200, windowHeight - 200);
 
 
   // Debugging information -- take this out when you're ready for production!
@@ -150,7 +150,7 @@ function Car() {
   this.display = function() {
 
     // maybe use an image here instead!
-    image(bottle, 0, 0, 50, 50);
+    image(bottle, this.pos.x, this.pos.y, 50, 50);
     // fill(this.r, this.g, this.b, this.a);
     // ellipse(this.pos.x - 50, this.pos.y, 50, 50);
     // ellipse(this.pos.x + 50, this.pos.y, 50, 50);
