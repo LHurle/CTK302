@@ -1,20 +1,20 @@
 var num;
 var distance;
-var font1, font2;
+var font1;
 
 var locationData;
 
 
 function preload() {
   locationData = getCurrentPosition();
-//  font1 = loadFont("assets/Mohave-Light.ttf");
+  font1 = loadFont("assets/ZulyanRomawiDemo.otf");
 }
 
 function setup() {
   // createCanvas(windowWidth, windowHeight);
     createCanvas(displayWidth, displayHeight);
   num = 0;
-//  textFont(font1, 36);
+  textFont(font1, 36);
   intervalCurrentPosition(positionPing, 5000); // this is what calls positionPing function
 
 
@@ -31,14 +31,14 @@ function positionPing(position) {
 
   distance = calcGeoDistance(locationData.latitude, locationData.longitude, position.latitude, position.longitude, 'mi');
 
-  background("#2452d1");
+  background("pink");
   fill("white");
-  text("lat: " + position.latitude, 10, 40);
-  text("long: " + position.longitude, 10, 90);
-  text("number of updates " + num, 10, 140);
+  text("Lat: " + position.latitude, 10, 40);
+  text("Long: " + position.longitude, 10, 90);
+  text("Number of Updates " + num, 10, 140);
 
-  text("you have moved " + distance, 10, 190);
-fill('red') ;
-  text("remember to take a screenshot before you take a picture of your surroundings!", 10, 260, 400);
+  text("You Have Moved " + distance, 10, 190);
+fill("black") ;
+  text("Remember to Take a Screenshot Before You Take a Picture of Your Surroundings!", 10, 260, 400);
 
 }
